@@ -13,8 +13,6 @@ import { dbCapabilities } from "@db/capabilities"
 import { dbContact } from "@db/contact"
 import { dbJourney } from "@db/journey"
 import { dbProjects } from "@db/projects"
-import { dbStack } from "@db/stack"
-import { dbTeam } from "@db/team"
 import { dbWork } from "@db/work"
 import { Section } from "@lib/Section/Section"
 import { aosParams } from "@service/aos/aosParams"
@@ -26,8 +24,6 @@ const CookiesConsent = dynamic(() => import("@components/CookiesConsent/CookiesC
 const BlockCapabilities = dynamic(() => import("@components/BlockCapabilities/BlockCapabilities").then(module => module.BlockCapabilities))
 const BlockProjects = dynamic(() => import("@components/BlockProjects/BlockProjects").then(module => module.BlockProjects))
 const BlockJourney = dynamic(() => import("@components/BlockJourney/BlockJourney").then(module => module.BlockJourney))
-const BlockStack = dynamic(() => import("@components/BlockStack/BlockStack").then(module => module.BlockStack))
-const BlockTeam = dynamic(() => import("@components/BlockTeam/BlockTeam").then(module => module.BlockTeam))
 const BlockContact = dynamic(() => import("@components/BlockContact/BlockContact").then(module => module.BlockContact))
 
 const Home: NextPage = () => {
@@ -37,7 +33,7 @@ const Home: NextPage = () => {
    React.useEffect(() => {
       Aos.init(aosParams)
 
-      const isCookie = getCookie("web3app-root")
+      const isCookie = getCookie("kucenko-root")
 
       if (!isCookie || isCookie === "reject") {
          setShowConsent(true)
@@ -47,7 +43,7 @@ const Home: NextPage = () => {
    return (
       <>
 
-         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F33QRJCH1T"
+         <Script src="https://www.googletagmanager.com/gtag/js?id=G-GSY5KCSQE1"
                  strategy="lazyOnload"/>
 
          <Script id="script" strategy="lazyOnload">
@@ -56,11 +52,9 @@ const Home: NextPage = () => {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                     gtag('config', 'G-F33QRJCH1T');
+                     gtag('config', 'G-GSY5KCSQE1');
                 `}
          </Script>
-
-         <Script src="https://widget.clutch.co/static/js/widget.js"/>
 
          {showConsent && <CookiesConsent consentSetter={setShowConsent}/>}
 
@@ -68,7 +62,7 @@ const Home: NextPage = () => {
 
          <Section bg="white"
                   id="work"
-                  subtitle="Choose a category to see how we can help you"
+                  subtitle="Choose a category to see how I can help you"
                   title={dbWork.page.header}>
             <BlockWork/>
          </Section>
@@ -92,15 +86,15 @@ const Home: NextPage = () => {
                <BlockJourney/>
             </Section>
 
-            <Section bg="white" id="stack"
-                     title={dbStack.page.header}>
-               <BlockStack/>
-            </Section>
+            {/*<Section bg="white" id="stack"*/}
+            {/*         title={dbStack.page.header}>*/}
+            {/*   <BlockStack/>*/}
+            {/*</Section>*/}
 
-            <Section bg="black" id="team"
-                     title={dbTeam.page.header}>
-               <BlockTeam/>
-            </Section>
+            {/*<Section bg="black" id="team"*/}
+            {/*         title={dbTeam.page.header}>*/}
+            {/*   <BlockTeam/>*/}
+            {/*</Section>*/}
 
             <Section bg="white" id="contact"
                      title={dbContact.page.header}>

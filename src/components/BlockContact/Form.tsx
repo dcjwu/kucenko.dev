@@ -2,6 +2,7 @@ import React from "react"
 
 import axios from "axios"
 
+import { dbContact } from "@db/contact"
 import { Button } from "@lib/Button/Button"
 
 import type { FormType } from "@customTypes/components"
@@ -12,7 +13,6 @@ const initialState = {
    name: "",
    email: "",
    topic: "",
-   company: "",
    message: ""
 }
 
@@ -45,7 +45,6 @@ export const Form: React.FC = (): JSX.Element => {
       await axios.post("api/contact", form)
 
          .then(res => {
-            setLoading(false)
             setError("")
             if (res.status === 200) {
                setSuccess("Email sent successfully")
@@ -65,6 +64,10 @@ export const Form: React.FC = (): JSX.Element => {
             setError(err.response.message)
          })
 
+         .finally(() => {
+            setLoading(false)
+         })
+
       ref.current && ref.current.blur()
    }
 
@@ -80,16 +83,13 @@ export const Form: React.FC = (): JSX.Element => {
                 type="text"
                 value={form.topic}
                 onChange={handleInputChange}/>
-         <input name="company" placeholder="Company" type="text"
-                value={form.company}
-                onChange={handleInputChange}/>
          <textarea required name="message" placeholder="Write your message here"
                    rows={3} value={form.message}
                    onChange={handleInputChange}></textarea>
          <Button ref={ref} ariaLabel="email-us" error={error}
                  loading={loading} success={success}
                  variant="primary">
-            Send us an email
+            {dbContact.page.buttonL}
          </Button>
       </form>
    )

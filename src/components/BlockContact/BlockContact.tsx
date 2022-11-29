@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Form } from "@components/BlockContact/Form"
+import { dbContact } from "@db/contact"
 import { Button } from "@lib/Button/Button"
 import { Heading } from "@lib/Heading/Heading"
 import { Text } from "@lib/Text/Text"
@@ -33,9 +34,9 @@ export const BlockContact: React.FC = (): JSX.Element => {
                   15 min
                </Text>
             </div>
-            <form action="https://calendly.com/artjoms-jurkevics/15min" rel="noreferrer" target="_blank">
+            <form action="https://calendly.com/aleksejs-kucenko/15-min" rel="noreferrer" target="_blank">
                <Button ariaLabel="call-us" variant="secondary">
-                  Schedule a call
+                  {dbContact.page.buttonR}
                </Button>
             </form>
          </div>

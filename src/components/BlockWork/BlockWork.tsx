@@ -15,7 +15,7 @@ export const BlockWork: React.FC = (): JSX.Element => {
                   variant="h1">
             Ready?
          </Heading>
-         <form action="https://calendly.com/artjoms-jurkevics/15min" rel="noreferrer" style={{
+         <form action="https://calendly.com/aleksejs-kucenko/15-min" rel="noreferrer" style={{
             display: "flex",
             justifyContent: "center"
          }}

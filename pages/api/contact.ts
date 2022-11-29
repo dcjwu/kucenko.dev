@@ -2,7 +2,6 @@ import sgMail from "@sendgrid/mail"
 import Joi from "joi"
 import { createRouter } from "next-connect"
 
-
 import { validationMiddleware } from "@service/sendgrid/validationMiddleware"
 
 import type { NextApiRequest, NextApiResponse } from "next"
@@ -15,7 +14,6 @@ const PostEmailDto = Joi.object({
    name: Joi.string().required(),
    email: Joi.string().required().email(),
    topic: Joi.string().required(),
-   company: Joi.string(),
    message: Joi.string().required()
 })
 
@@ -27,13 +25,12 @@ router
          name,
          email,
          topic,
-         company,
          message
       } = request.body
 
       const messageToSend = {
-         to: "info@web3app.agency",
-         from: "info@web3app.agency",
+         to: "aleksejs@kucenko.dev",
+         from: "aleksejs@kucenko.dev",
          subject: topic,
          html: `<style>
                    body {
@@ -50,7 +47,6 @@ router
                    <p>Hey,</p>
                    <p>You have received new email from <b>${email}</b>.</p>
                    <p>Name: <b>${name}</b></p>
-                   <p>Company: <b>${company}</b></p>
                    <p>Message: <b>${message}</b></p>
                </div>`
       }

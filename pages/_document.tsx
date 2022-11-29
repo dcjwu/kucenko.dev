@@ -12,19 +12,19 @@ export default class Document extends NextDocument {
                <link href="https://fonts.gstatic.com" rel="preconnect"/>
                <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap"
                      rel="stylesheet"/>
-               <meta content="Our business-oriented strategy offers high-quality customer service and expertise at every stage of development. Get a technical partner who strives for your success."
+               <meta content="Fast and predictable web development and attentive mentorship."
                   name="description"/>
 
-               <meta content="Web3App.Agency | High Quality Blockchain Development" property="og:title"/>
-               <meta content="Our business-oriented strategy offers high-quality customer service and expertise at every stage of development. Get a technical partner who strives for your success."
+               <meta content="kucenko.dev | Developer and Mentor" property="og:title"/>
+               <meta content="Fast and predictable web development and attentive mentorship."
                      property="og:description"/>
-               <meta content="https://web3app.agency/logo.png" property="og:image"/>
-               <meta content="https://web3app.agency" property="og:url"/>
+               <meta content="https://kucenko.dev/logo.png" property="og:image"/>
+               <meta content="https://kucenko.dev" property="og:url"/>
 
-               <meta content="Web3App.Agency | High Quality Blockchain Development" name="twitter:title"/>
-               <meta content="Our business-oriented strategy offers high-quality customer service and expertise at every stage of development. Get a technical partner who strives for your success."
+               <meta content="kucenko.dev | Developer and Mentor" name="twitter:title"/>
+               <meta content="Fast and predictable web development and attentive mentorship."
                      name="twitter:description"/>
-               <meta content="https://web3app.agency/logo.png" name="twitter:url"/>
+               <meta content="https://kucenko.dev/logo.png" name="twitter:url"/>
             </Head>
             <body>
                <Main/>

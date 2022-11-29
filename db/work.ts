@@ -1,91 +1,86 @@
 export const dbWork = {
    page: {
       header: "Let's work together",
-      subheader: "Choose category to see how we can help you",
+      subheader: "Choose category to see how I help you",
       supbutton: "Ready?",
       button: "Schedule a call"
    },
    content: [
       {
-         header: "Want to build an MVP?",
+         header: "Want to become a partner?",
          subheader: [
             "Your Challenge",
-            "Our Solution"
+            "My Solution"
          ],
          battery: "low",
          data: [
             {
-               challenge: "I have a great project concept, but I am not sure how much or how long it would take to" +
-                  " develop the application.",
-               solution: "Your business needs will be converted into technical specifications and user stories by our team. Our engineers will create a thorough time and cost estimate based on that."
+               challenge: "I am a UX/UI Designer / Web Developer and I wish to help you delivering world class" +
+                  " products and services.",
+               solution: "I will be happy to cooperate with you, just schedule a call with me so we can discuss our" +
+                  " sinergies. "
             },
             {
-               challenge: "How might I choose the features for my MVP?",
-               solution: "Based on our knowledge of the sector, we offer guidance on your MVP launch plan and objectives."
+               challenge: "I am a Project Manager and I can help you optimize your workload and take on routine tasks.",
+               solution: "Yes, I was waiting for you very long time."
             },
-            {
-               challenge: "I'm not yet prepared to assemble an internal development team. How do I make things happen?",
-               solution: "To work on your business requirements iteratively, we assign specialized teams of software developers. You are not required to commit to a long-term commitment."
-            },
-            {
-               challenge: "Given that I'm not technically inclined, would it be challenging for me to communicate with and comprehend your software developers?",
-               solution: "To ensure your understanding, we would also limit any project-related conversations to public chats and keep you periodically updated on the project's status."
-            },
-            {
-               challenge: "How to validate my business idea quickly?",
-               solution: "We offer our opinions on how to verify your company concept with the least amount of work and expense on your part. To verify your concept or demonstrate it to investors, we may offer to construct a prototype, interactive wireframes, and other rapid solutions."
-            },
-            {
-               challenge: "How can I be confident that my business concept and other intellectual property will be protected?",
-               solution: "In order to protect the privacy of your information, we offer to sign an NDA before discussing the project. We also operate by internal security policies."
-            }
          ]
       },
       {
-         header: "Scaling up your project?",
+         header: "Dream of becoming a web developer?",
          subheader: [
             "Your Challenge",
-            "Our Solution"
+            "My Solution"
          ],
          battery: "half",
          data: [
             {
-               challenge: "How can I grow my product development velocity quickly?",
-               solution: "We'll assign a team of focused professionals to your project that shares the same work ethics and skill set as necessary to complete it. You won't have to invest months in recruiting and training internal staff."
+               challenge: "I want to become a developer but I do not know where to start.",
+               solution: "On our first meeting we will discuss all your knowledge and ideas and develop clear plan of" +
+                  " the" +
+                  " education for you. I will provide an assistance and guidance until you get desired" +
+                  " results."
             },
             {
-               challenge: "Can you help me handle fast-paced priorities changing?",
-               solution: "To swiftly respond to all changes, we communicate daily and employ agile development methodologies."
+               challenge: "How long this is going to take to get my first job?",
+               solution: "From three to six months depending on how consistent you are and how much time per week you" +
+                  " study and write code."
             },
             {
-               challenge: "If I hire one more engineering team, how do I keep everything organized?",
-               solution: "By sticking to open communication procedures, holding daily stand-up meetings, and making our work process apparent to the rest of the team, we can easily integrate with your team. And we anticipate that your group will follow suit. You may place your trust in us when it comes to working process management."
-            },
-            {
-               challenge: "Can I trust you with the technical part while I take care of my other business priorities?",
-               solution: "You may concentrate on your company's marketing and strategy while we handle the technical aspects of the process."
+               challenge: "I already have some development knowledge and I am tired from pet-projects, I want" +
+                  " real-world" +
+                  " project" +
+                  " practice.",
+               solution: "After an interview, according to your knowledge I will be pleased to give you such an" +
+                  " opportunity to participate in a real-world project."
             }
          ]
       },
       {
-         header: "Already a tech company?",
+         header: "Have a business idea?",
          subheader: [
             "Your Challenge",
-            "Our Solution"
+            "My Solution"
          ],
          battery: "full",
          data: [
             {
-               challenge: "We’re missing some in-house tech expertise to fulfill our business needs",
-               solution: "Together with you, we'll fill in the competence gaps and go above and beyond what is required to meet company needs."
+               challenge: "I have a great project concept, but I am not sure how much or how long it would take to" +
+                  " develop the application.",
+               solution: "Your business needs will be converted into technical specifications and user stories" +
+                  " and then I create a thorough time and cost estimate based on that."
             },
             {
-               challenge: "Can I trust you with the technical part while I take care of my other business priorities?",
-               solution: "You may concentrate on your company's marketing and strategy while we handle the technical aspects of the process."
+               challenge: "How to validate my business idea quickly?",
+               solution: "I offer opinions on how to verify your company concept with the least amount of work" +
+                  " and expense on your part. To verify your concept or demonstrate it to investors, I offer to" +
+                  " construct a prototype, interactive wireframes, and other rapid solutions."
             },
             {
-               challenge: "I have a great in-house project concept, but I don't sure how much or how long it would take to develop it?",
-               solution: "Our team will translate your business needs into technical specs and sprint retrospectives. Based on it, our experts will provide a complete time and cost estimate."
+               challenge: "Given that I'm not technically inclined, would it be challenging for me to communicate" +
+                  " with you and comprehend?",
+               solution: "To ensure your understanding, I would also limit any project-related conversations to" +
+                  " public chats and keep you weekly updated on the project's status."
             },
          ]
       }

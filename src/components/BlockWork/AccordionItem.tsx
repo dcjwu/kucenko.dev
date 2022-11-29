@@ -90,9 +90,9 @@ export const AccordionItem: React.FC<AccordionItemType> = ({
                   <div className={s.qaItem}>
                      <svg fill="none" height="32" viewBox="0 0 32 32"
                           width="32" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.5 13L14.1625 20L10.5 16.5" stroke="#1CFEBA" strokeLinecap="round"
+                        <path d="M21.5 13L14.1625 20L10.5 16.5" stroke="#fb8500" strokeLinecap="round"
                               strokeLinejoin="round" strokeWidth="1.5"/>
-                        <rect height="30.5" rx="15.25" stroke="#1CFEBA"
+                        <rect height="30.5" rx="15.25" stroke="#fb8500"
                               strokeWidth="1.5" width="30.5" x="0.75"
                               y="0.75"/>
                      </svg>

@@ -1,4 +1,4 @@
-name: Web3App.agency Website Workflow
+name: kucenko.dev Website Workflow
 on:
   push:
     branches: [ master ]

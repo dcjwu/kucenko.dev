@@ -3,7 +3,6 @@ export enum ActiveItemEnum {
    Research = "Research & Design",
    Dev = "Development",
    Release = "Release",
-   Support = "Support & Maintenance"
 }
 
 export type BlockJourneyItemType = {

@@ -21,10 +21,10 @@ export const Header = React.forwardRef<HTMLDivElement>((props, ref) => {
             <div className={s.title}>
                <Heading color="white" component="h1" style={{ marginBottom: "1.6rem" }}
                         variant="display">
-                  Web3App<span style={{ color: colorBrand }}>.Agency</span>
+                  kucenko<span style={{ color: colorBrand }}>.dev</span>
                </Heading>
                <Text color="white" component="h2" variant="paragraph-lg">
-                  <span style={{ color: colorBrand }}>Your</span> ideas become <span style={{ color: colorBrand }}>reality</span> here
+                  <span style={{ color: colorBrand }}>Your</span> technical <span style={{ color: colorBrand }}>friend</span> is here
                </Text>
             </div>
             <Arrow noDifference ariaLabel="move-to-next-block" direction="down"

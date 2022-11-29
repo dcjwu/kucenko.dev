@@ -15,7 +15,7 @@ export const FooterContacts: React.FC = (): JSX.Element => {
          <Text isBold color="white" component="p"
                style={{ marginBottom: "1.6rem" }}
                variant="paragraph-lg">
-            <span style={{ color: colorBrand }}>C</span>ontact us
+            <span style={{ color: colorBrand }}>C</span>ontact me
          </Text>
 
          {hasMounted && <ul className={s.list} role="presentation" onMouseLeave={handleMouseLeave}>

@@ -19,7 +19,7 @@ export const CookiesConsent: React.FC<CookiesConsent> = ({ consentSetter }): JSX
    }, [])
    
    const handleCookie = (value: string): void => {
-      setCookie("web3app-root", value)
+      setCookie("kucenko-root", value)
       consentSetter(false)
       document.body.style.overflow = ""
    }

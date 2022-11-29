@@ -5,14 +5,14 @@
   align-items: center;
   display: grid;
   gap: 5rem;
-  grid-template-columns: 9rem 0fr 9rem 0fr 9rem 0fr 9rem 0fr 9rem;
+  grid-template-columns: 9rem 0fr 9rem 0fr 9rem 0fr 9rem;
   justify-content: space-between;
   padding: calc(8rem + 2.8rem) 0 calc(8rem + 2.8rem + 3.6rem) 0; //sectionPt + lh
   width: 95%;
 
   @include breakpoint-max($screen-max-width) {
     gap: 3.2rem;
-    grid-template-columns: 11% 0fr 11% 0fr 11% 0fr 11% 0fr 11%;
+    grid-template-columns: 11% 0fr 11% 0fr 11% 0fr 11%;
     justify-content: space-between;
     padding: calc(5.8rem + 2.1rem) 0 calc(5.8rem + 2.1rem + 3.6rem) 0; //sectionPt + lh
   }

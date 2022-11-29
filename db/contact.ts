@@ -1,12 +1,12 @@
 export const dbContact = {
    page: {
-      header: "Have an idea or a project you would like to discuss?",
-      buttonL: "Send us am email",
+      header: "Want to discuss your desires?",
+      buttonL: "Send me an email",
       buttonR: "Schedule a call"
    }
 }
 
 export const dbConnect = {
-   phone: "+37126892221",
-   email: "info@web3app.agency"
+   phone: "+37122012202",
+   email: "aleksejs@kucenko.dev"
 }

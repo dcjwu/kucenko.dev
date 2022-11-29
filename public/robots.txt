@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://website-web3app-agency-v2.vercel.app/
-
-# Sitemaps
-Sitemap: https://website-web3app-agency-v2.vercel.app/sitemap.xml
