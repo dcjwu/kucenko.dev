@@ -1,7 +1,8 @@
-## Getting Started
+#### Context:
+__December 2022.__ My personal website which is copy of website I developed earlier.
 
-Run the development server:
+#### Technologies used:
+- Next.js
 
-```bash
-yarn dev
-```
+#### Status:
+Project is finished.
